@@ -6,8 +6,6 @@ function Account() {
   const [account, setAccount] = useState({
     type: "",
     balance: "",
-    branchName: "",
-    ifsc: "",
     customerId: ""
   });
 
@@ -24,8 +22,6 @@ function Account() {
   const request = {
     type: account.type,
     balance: Number(account.balance),
-    branchName: account.branchName,
-    ifsc: account.ifsc,
     customerId: Number(account.customerId)
   };
 
@@ -42,8 +38,6 @@ function Account() {
     setAccount({
       type: "",
       balance: "",
-      branchName: "",
-      ifsc: "",
       customerId: ""
     });
 
@@ -99,36 +93,6 @@ function Account() {
           </div>
 
 
-          <div>
-            <label className="block text-gray-700 font-medium mb-1">
-              Branch Name
-            </label>
-
-            <input
-              type="text"
-              name="branchName"
-              value={account.branchName}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter branch name"
-            />
-          </div>
-
-
-          <div>
-            <label className="block text-gray-700 font-medium mb-1">
-              IFSC
-            </label>
-
-            <input
-              type="text"
-              name="ifsc"
-              value={account.ifsc}
-              onChange={handleChange}
-              className="w-full border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
-              placeholder="Enter IFSC code"
-            />
-          </div>
 
 
           <div>

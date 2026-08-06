@@ -12,6 +12,7 @@ function Customer() {
     address: "",
     aadharCard: "",
     panCard: "",
+    image:""
   });
 
   const handleChange = (e) => {
@@ -39,6 +40,7 @@ function Customer() {
         address: "",
         aadharCard: "",
         panCard: "",
+        image:""
       });
     } catch (error) {
       console.log(error);
@@ -172,7 +174,7 @@ function Customer() {
               type="submit"
               className="w-full bg-blue-600 text-white py-3 rounded-md hover:bg-blue-700 transition duration-300"
             >
-              Save Customer
+              Create Account
             </button>
           </div>
 
