@@ -10,8 +10,8 @@ function Customer() {
     email: "",
     phoneNumber: "",
     address: "",
-    aadharCard: "",
-    panCard: "",
+    aadharNumber: "",
+    panNumber: "",
     image:""
   });
 
@@ -38,8 +38,8 @@ function Customer() {
         email: "",
         phoneNumber: "",
         address: "",
-        aadharCard: "",
-        panCard: "",
+        aadharNumber: "",
+        panNumber: "",
         image:""
       });
     } catch (error) {
@@ -149,8 +149,8 @@ function Customer() {
             <label className="block mb-1 font-medium">Aadhar Card</label>
             <input
               type="text"
-              name="aadharCard"
-              value={customer.aadharCard}
+              name="aadharNumber"
+              value={customer.aadharNumber}
               onChange={handleChange}
               required
               className="w-full border rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -161,8 +161,8 @@ function Customer() {
             <label className="block mb-1 font-medium">PAN Card</label>
             <input
               type="text"
-              name="panCard"
-              value={customer.panCard}
+              name="panNumber"
+              value={customer.panNumber}
               onChange={handleChange}
               required
               className="w-full border rounded-md p-2 uppercase focus:outline-none focus:ring-2 focus:ring-blue-500"
